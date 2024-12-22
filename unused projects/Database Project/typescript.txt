@@ -1,0 +1,526 @@
+cdpoolma@turing:~/python_start$ script
+Script started, file is typescript
+groups: cannot find name for group ID 762800513
+cdpoolma@turing:~/python_start$ python3 newdatabase.py 
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): Eureka Pizza
+Invalid choice. Please enter a number between 1 and 6.
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 1
+Enter the restaurant name: Eureka Pizza
+Enter the city: Fayetteville
+
+Query Result:
+
+dishName           price
+---------------  -------
+Salad               6.25
+Garlic Bread        5.5
+Cheese Pizza       12.5
+Pepperoni Pizza    13.5
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 1
+Enter the restaurant name: Slims chicken
+Enter the city: Rogers
+No entries found.
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 4
+
+Query Result:
+
+  orderNo    itemNo  date        time
+---------  --------  ----------  --------
+        0         2  2024-03-01  10:30:00
+        1         0  2024-03-02  15:33:00
+        2         3  2024-03-01  15:35:00
+        3         5  2024-03-03  21:00:00
+        4         7  2024-03-01  18:11:00
+        5         7  2024-03-04  18:51:00
+        6         9  2024-03-01  19:00:00
+        7        11  2024-03-05  17:15:00
+        8        11  2024-04-01  12:10:00
+Enter the order number you want to cancel: 9
+Order canceled successfully!
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 2
+Enter the dish name you want to order: Spring Rolls
+
+Query Result:
+
+  itemNo  restaurantName    city         price
+--------  ----------------  ---------  -------
+       0  Tasty Thai        Dallas           8
+       9  Tasty Thai        Las Vegas        6
+Enter the item number you want to order: 9
+Order placed successfully!
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 4
+
+Query Result:
+
+  orderNo    itemNo  date        time
+---------  --------  ----------  --------
+        0         2  2024-03-01  10:30:00
+        1         0  2024-03-02  15:33:00
+        2         3  2024-03-01  15:35:00
+        3         5  2024-03-03  21:00:00
+        4         7  2024-03-01  18:11:00
+        5         7  2024-03-04  18:51:00
+        6         9  2024-03-01  19:00:00
+        7        11  2024-03-05  17:15:00
+        8        11  2024-04-01  12:10:00
+        9         9  2024-04-09  20:55:53
+Enter the order number you want to cancel: 10
+Order canceled successfully!
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 2
+Enter the dish name you want to order: Classic Meal
+No entries found.
+ 
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 3
+Enter the restaurant name: Eureka Pizza
+Enter the city: Fayetteville
+Restaurant: Eureka Pizza
+
+Query Result:
+
+dishName        price  date        time
+------------  -------  ----------  --------
+Salad            6.25  2024-03-03  21:00:00
+Cheese Pizza    12.5   2024-03-01  18:11:00
+Cheese Pizza    12.5   2024-03-04  18:51:00
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 3
+Enter the restaurant name: Eureka Pizza
+Enter the city: Bentonville
+Restaurant: Eureka Pizza
+No entries found.
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 4
+
+Query Result:
+
+  orderNo    itemNo  date        time
+---------  --------  ----------  --------
+        0         2  2024-03-01  10:30:00
+        1         0  2024-03-02  15:33:00
+        2         3  2024-03-01  15:35:00
+        3         5  2024-03-03  21:00:00
+        4         7  2024-03-01  18:11:00
+        5         7  2024-03-04  18:51:00
+        6         9  2024-03-01  19:00:00
+        7        11  2024-03-05  17:15:00
+        8        11  2024-04-01  12:10:00
+        9         9  2024-04-09  20:55:53
+Enter the order number you want to cancel: 7
+Order canceled successfully!
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 4
+
+Query Result:
+
+  orderNo    itemNo  date        time
+---------  --------  ----------  --------
+        0         2  2024-03-01  10:30:00
+        1         0  2024-03-02  15:33:00
+        2         3  2024-03-01  15:35:00
+        3         5  2024-03-03  21:00:00
+        4         7  2024-03-01  18:11:00
+        5         7  2024-03-04  18:51:00
+        6         9  2024-03-01  19:00:00
+        8        11  2024-04-01  12:10:00
+        9         9  2024-04-09  20:55:53
+Enter the order number you want to cancel: 7
+Order canceled successfully!
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 5
+Enter the restaurant name: Tasty Thai
+Enter the city: Dallas 
+
+Query Result:
+
+  dishNo  dishName         price
+--------  -------------  -------
+      13  Spring Rolls         8
+      16  Pot Stickers         9
+      44  Salad               10
+      15  Pad Thai            19
+      22  Masaman Curry       19
+ 
+Enter the dish name: Pasta Shrimp
+Enter the dish type: en
+Enter the price: 8.99
+New dish added successfully!
+
+Query Result:
+
+  dishNo  dishName         price
+--------  -------------  -------
+      13  Spring Rolls      8
+      16  Pot Stickers      9
+      44  Salad            10
+      15  Pad Thai         19
+      22  Masaman Curry    19
+      78  Pasta Shrimp      8.99
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 6
+Exiting program. Goodbye!
+cdpoolma@turing:~/python_start$ exit
+exit
+Script done, file is typescript
+cdpoolma@turing:~/python_start$ ls
+database.py  newdatabase.py  python_db_example.py  runpython.sh
+hw3_soln.sh  py.bak          README                typescript
+cdpoolma@turing:~/python_start$ cat typescript
+Script started on 2024-04-09 20:54:30-0500
+groups: cannot find name for group ID 762800513
+cdpoolma@turing:~/python_start$ python3 newdatabase.py 
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): Eureka Pizza
+Invalid choice. Please enter a number between 1 and 6.
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 1
+Enter the restaurant name: Eureka Pizza
+Enter the city: Fayetteville
+
+Query Result:
+
+dishName           price
+---------------  -------
+Salad               6.25
+Garlic Bread        5.5
+Cheese Pizza       12.5
+Pepperoni Pizza    13.5
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 1
+Enter the restaurant name: Slims chicken
+Enter the city: Rogers
+No entries found.
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 4
+
+Query Result:
+
+  orderNo    itemNo  date        time
+---------  --------  ----------  --------
+        0         2  2024-03-01  10:30:00
+        1         0  2024-03-02  15:33:00
+        2         3  2024-03-01  15:35:00
+        3         5  2024-03-03  21:00:00
+        4         7  2024-03-01  18:11:00
+        5         7  2024-03-04  18:51:00
+        6         9  2024-03-01  19:00:00
+        7        11  2024-03-05  17:15:00
+        8        11  2024-04-01  12:10:00
+Enter the order number you want to cancel: 9
+Order canceled successfully!
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 2
+Enter the dish name you want to order: Spring Rolls
+
+Query Result:
+
+  itemNo  restaurantName    city         price
+--------  ----------------  ---------  -------
+       0  Tasty Thai        Dallas           8
+       9  Tasty Thai        Las Vegas        6
+Enter the item number you want to order: 9
+Order placed successfully!
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 4
+
+Query Result:
+
+  orderNo    itemNo  date        time
+---------  --------  ----------  --------
+        0         2  2024-03-01  10:30:00
+        1         0  2024-03-02  15:33:00
+        2         3  2024-03-01  15:35:00
+        3         5  2024-03-03  21:00:00
+        4         7  2024-03-01  18:11:00
+        5         7  2024-03-04  18:51:00
+        6         9  2024-03-01  19:00:00
+        7        11  2024-03-05  17:15:00
+        8        11  2024-04-01  12:10:00
+        9         9  2024-04-09  20:55:53
+Enter the order number you want to cancel: 10
+Order canceled successfully!
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 2
+Enter the dish name you want to order: Classic Meal
+No entries found.
+ 
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 3
+Enter the restaurant name: Eureka Pizza
+Enter the city: Fayetteville
+Restaurant: Eureka Pizza
+
+Query Result:
+
+dishName        price  date        time
+------------  -------  ----------  --------
+Salad            6.25  2024-03-03  21:00:00
+Cheese Pizza    12.5   2024-03-01  18:11:00
+Cheese Pizza    12.5   2024-03-04  18:51:00
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 3
+Enter the restaurant name: Eureka Pizza
+Enter the city: Bentonville
+Restaurant: Eureka Pizza
+No entries found.
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 4
+
+Query Result:
+
+  orderNo    itemNo  date        time
+---------  --------  ----------  --------
+        0         2  2024-03-01  10:30:00
+        1         0  2024-03-02  15:33:00
+        2         3  2024-03-01  15:35:00
+        3         5  2024-03-03  21:00:00
+        4         7  2024-03-01  18:11:00
+        5         7  2024-03-04  18:51:00
+        6         9  2024-03-01  19:00:00
+        7        11  2024-03-05  17:15:00
+        8        11  2024-04-01  12:10:00
+        9         9  2024-04-09  20:55:53
+Enter the order number you want to cancel: 7
+Order canceled successfully!
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 4
+
+Query Result:
+
+  orderNo    itemNo  date        time
+---------  --------  ----------  --------
+        0         2  2024-03-01  10:30:00
+        1         0  2024-03-02  15:33:00
+        2         3  2024-03-01  15:35:00
+        3         5  2024-03-03  21:00:00
+        4         7  2024-03-01  18:11:00
+        5         7  2024-03-04  18:51:00
+        6         9  2024-03-01  19:00:00
+        8        11  2024-04-01  12:10:00
+        9         9  2024-04-09  20:55:53
+Enter the order number you want to cancel: 7
+Order canceled successfully!
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 5
+Enter the restaurant name: Tasty Thai
+Enter the city: Dallas 
+
+Query Result:
+
+  dishNo  dishName         price
+--------  -------------  -------
+      13  Spring Rolls         8
+      16  Pot Stickers         9
+      44  Salad               10
+      15  Pad Thai            19
+      22  Masaman Curry       19
+ 
+Enter the dish name: Pasta Shrimp
+Enter the dish type: en
+Enter the price: 8.99
+New dish added successfully!
+
+Query Result:
+
+  dishNo  dishName         price
+--------  -------------  -------
+      13  Spring Rolls      8
+      16  Pot Stickers      9
+      44  Salad            10
+      15  Pad Thai         19
+      22  Masaman Curry    19
+      78  Pasta Shrimp      8.99
+
+Menu of operations:
+1) Find all available menu items at any restaurant
+2) Order an available menu item from a particular restaurant
+3) List all food orders for a particular restaurant
+4) Cancel a food order
+5) Add a new dish for a restaurant
+6) Quit
+Enter your choice (1-6): 6
+Exiting program. Goodbye!
+cdpoolma@turing:~/python_start$ exit
+exit
