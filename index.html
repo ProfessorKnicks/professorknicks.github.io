@@ -214,25 +214,33 @@
                     <img src="images/glasses.png" alt="Contact"
                         onerror="this.src='data:image/svg+xml,%3Csvg width=\'300\' height=\'400\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Crect width=\'300\' height=\'400\' fill=\'%23e8d5c4\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' fill=\'%23666\' font-size=\'16\' font-family=\'Arial\'%3EPerson with%3C/text%3E%3Ctext x=\'50%25\' y=\'55%25\' text-anchor=\'middle\' fill=\'%23666\' font-size=\'16\' font-family=\'Arial\'%3EBinoculars%3C/text%3E%3C/svg%3E'">
                 </div>
+
                 <div class="contact-form">
                     <h3>Want to Send a <span>Message?</span></h3>
-                    <form onsubmit="sendEmail(event)">
+
+                    <!-- Web3Forms Integrated Form -->
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="d825d78f-6fcd-4fda-879d-1253b8378bd2">
+
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="text" id="fullname" placeholder="Full Name" required>
+                                <input type="text" name="name" id="fullname" placeholder="Full Name" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" id="email" placeholder="Email" required>
+                                <input type="email" name="email" id="email" placeholder="Email" required>
                             </div>
                         </div>
+
                         <div class="form-group">
-                            <textarea id="message" placeholder="Message" required></textarea>
+                            <textarea name="message" id="message" placeholder="Message" required></textarea>
                         </div>
+
                         <button type="submit" class="submit-btn">Submit</button>
                     </form>
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer>
