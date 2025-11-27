@@ -1,9 +1,9 @@
 ReadMe
 
 Need to do:
-1. Overhaul on website
-- Design it
-- Use figma
+1. Update Projects Section
+2. Update Resume Section
+3. Update About Section
 
   
 To do List:
