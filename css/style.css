@@ -667,9 +667,18 @@ nav a:hover {
     border-bottom: 2px solid var(--accent);
 }
 
+.education-card {
+    background: var(--bg-primary);
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
 .skill-card {
     background: var(--bg-primary);
-    padding: 25px;
+    padding: 10px;
     border-radius: 15px;
     margin-bottom: 20px;
     border: 2px solid transparent;
@@ -677,29 +686,43 @@ nav a:hover {
 }
 
 .skill-item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50px 140px 1fr;
+    /* icon | name | bar */
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
+    width: 100%;
 }
 
+/* ICON SECTION */
 .skill-icon {
     width: 40px;
     height: 40px;
     border-radius: 5px;
+    justify-self: center;
 }
 
+/* NAME SECTION */
+.skill-name {
+    font-weight: 500;
+}
+
+/* BAR SECTION */
 .skill-bar {
-    flex: 1;
-    height: 8px;
+    width: 100%;
+    height: 13px;
     background: #ddd;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .skill-progress {
     height: 100%;
     background: var(--accent);
+    border-radius: 10px;
 }
 
 .resume-main {
