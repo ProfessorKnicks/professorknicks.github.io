@@ -14,6 +14,8 @@
     --footer-bg: #000;
     --footer-text: #fff;
     --card-shadow: rgba(0, 0, 0, 0.1);
+    --bg-opposite-primary: #3d2817;
+    --text-opposite-primary: #f5f0e8;
 }
 
 body.dark-mode {
@@ -24,6 +26,8 @@ body.dark-mode {
     --accent: #7a8c6b;
     --accent-dark: #5a6c4b;
     --card-shadow: rgba(0, 0, 0, 0.5);
+    --bg-opposite-primary: #f5f0e8;
+    --text-opposite-primary: #000;
 }
 
 body {
@@ -634,30 +638,47 @@ nav a:hover {
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 30px var(--card-shadow);
-}
-
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 15px;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 20px;
-}
-
-.badge {
-    background: var(--accent);
-    color: var(--text-primary);
-    padding: 8px 16px;
-    border-radius: 20px;
-    display: inline-block;
-    margin-bottom: 20px;
-    font-size: 14px;
+    text-align: left;
 }
 
 .resume-sidebar h3 {
     font-size: 2em;
     margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 240px;
+    height: 240px;
+    border-radius: 25%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.badge-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.badge {
+    background: var(--accent);
+    /* you can keep this, or use transparent */
+    color: var(--text-primary);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: center;
+    border: 2px solid var(--accent);
+    /* initial border same as background */
+    transition: border-color 0.3s, color 0.3s;
+    /* smooth hover effect */
+}
+
+.badge:hover {
+    border-color: var(--bg-opposite-primary);
+    color: var(--text-opposite-primary);
+    background: var(--accent);
 }
 
 .section-title {
@@ -674,6 +695,37 @@ nav a:hover {
     margin-bottom: 20px;
     border: 2px solid transparent;
     transition: border 0.3s;
+}
+
+.education-item {
+    padding: 15px;
+    border-left: 4px solid var(--accent);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.education-date {
+    background: var(--accent);
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.education-card:hover {
+    border-color: var(--accent);
 }
 
 .skill-card {
@@ -695,7 +747,11 @@ nav a:hover {
     width: 100%;
 }
 
-/* ICON SECTION */
+.skill-card:hover {
+    border-color: var(--accent);
+}
+
+/* Skill SECTION */
 .skill-icon {
     width: 40px;
     height: 40px;
@@ -703,12 +759,10 @@ nav a:hover {
     justify-self: center;
 }
 
-/* NAME SECTION */
 .skill-name {
     font-weight: 500;
 }
 
-/* BAR SECTION */
 .skill-bar {
     width: 100%;
     height: 13px;
@@ -732,6 +786,7 @@ nav a:hover {
     box-shadow: 0 10px 30px var(--card-shadow);
 }
 
+/* Experience SECTION */
 .experience-card {
     background: var(--bg-primary);
     padding: 25px;
@@ -758,13 +813,110 @@ nav a:hover {
     font-weight: bold;
 }
 
-.experience-date {
+.resume-date {
     background: var(--accent);
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 0.9em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
+/* References SECTION */
+/* References SECTION */
+.references-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for 2x2 layout */
+    gap: 20px;
+    background: var(--bg-secondary);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.reference-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.reference-card {
+    background: var(--bg-primary);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: border 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.reference-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.reference-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    border: 2px solid var(--accent);
+}
+
+.reference-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.reference-info strong {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--text-primary);
+}
+
+.reference-title {
+    font-size: 0.95em;
+    color: var(--text-secondary);
+}
+
+.reference-contact {
+    font-size: 0.9em;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.reference-contact a {
+    display: none;
+    /* hide individual links since whole card is clickable */
+}
+
+/* Responsive: stack cards on smaller screens */
+@media (max-width: 768px) {
+    .references-grid {
+        grid-template-columns: 1fr;
+        /* 1 column on mobile */
+    }
+
+    .reference-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .reference-photo {
+        margin-bottom: 10px;
+    }
+}
+
+/* Hobbies SECTION */
 .hobbies {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
