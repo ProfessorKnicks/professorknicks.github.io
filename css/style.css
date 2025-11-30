@@ -789,7 +789,7 @@ nav a:hover {
 /* Experience SECTION */
 .experience-card {
     background: var(--bg-primary);
-    padding: 25px;
+    padding: 10px;
     border-radius: 15px;
     margin-bottom: 20px;
     border: 2px solid transparent;
@@ -803,9 +803,22 @@ nav a:hover {
 .experience-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
-    flex-wrap: wrap;
     gap: 10px;
+}
+
+.experience-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.experience-img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .experience-title {
@@ -825,7 +838,6 @@ nav a:hover {
     text-align: center;
 }
 
-/* References SECTION */
 /* References SECTION */
 .references-grid {
     display: grid;
