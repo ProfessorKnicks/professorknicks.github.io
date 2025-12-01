@@ -6,7 +6,6 @@ Need to do:
     - Update Expereince Section
         - Update text for Internship
         - Update text for Full-time
-        - Update text to start after icon
     - Update Education Section
         - Add minor and Major
     - Update Picture to be centered

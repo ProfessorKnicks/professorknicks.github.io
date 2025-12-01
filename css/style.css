@@ -663,16 +663,13 @@ nav a:hover {
 
 .badge {
     background: var(--accent);
-    /* you can keep this, or use transparent */
     color: var(--text-primary);
     padding: 8px 20px;
     border-radius: 20px;
     font-size: 14px;
     text-align: center;
     border: 2px solid var(--accent);
-    /* initial border same as background */
     transition: border-color 0.3s, color 0.3s;
-    /* smooth hover effect */
 }
 
 .badge:hover {
@@ -688,45 +685,81 @@ nav a:hover {
     border-bottom: 2px solid var(--accent);
 }
 
-.education-card {
+/* EDUCATION Section */
+.education-accordion {
     background: var(--bg-primary);
-    padding: 10px;
-    border-radius: 15px;
+    border-radius: 20px;
     margin-bottom: 20px;
     border: 2px solid transparent;
-    transition: border 0.3s;
+    overflow: hidden;
+    transition: border 0.3s ease;
+    position: relative;
 }
 
-.education-item {
-    padding: 15px;
-    border-left: 4px solid var(--accent);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-}
-
-.education-date {
+.edu-indicator {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 22px;
+    height: 20px;
+    object-fit: contain;
+    transition: opacity 0.75s ease;
+    opacity: 0.85;
     background: var(--accent);
-    font-size: 0.9em;
-    font-weight: bold;
-    padding: 10px 10px;
-    border-radius: 20px;
-    text-align: center;
-    display: inline-block;
-    white-space: nowrap;
-}
-
-.education-details {
+    border-radius: 50%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1em;
+    font-weight: bold;
+    color: var(--text-primary);
 }
 
-.education-card:hover {
+.education-accordion:hover {
     border-color: var(--accent);
 }
+
+.education-header {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.education-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.edu-degree {
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+.edu-school {
+    font-size: 0.85em;
+    opacity: 0.9;
+}
+
+.edu-date {
+    font-size: 0.85em;
+    opacity: 0.85;
+}
+
+.education-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition:
+        max-height 0.35s ease,
+        padding 0.25s ease;
+}
+
+.education-content p {
+    font-size: 0.9em;
+}
+
+.education-content.open {
+    padding: 15px;
+    padding-bottom: 10px;
+}
+
 
 .skill-card {
     background: var(--bg-primary);

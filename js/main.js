@@ -506,13 +506,23 @@ function sendEmail(event) {
     alert('Your email client will open. Please send the message from there!');
 }
 
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
+document.querySelectorAll('.education-accordion').forEach(acc => {
+    const content = acc.querySelector('.education-content');
+    const indicator = acc.querySelector('.edu-indicator');
+
+    acc.addEventListener('click', (e) => {
+        if (e.target.closest('a, button')) return;
+
+        acc.classList.toggle('open');
+
+        if (acc.classList.contains('open')) {
+            content.style.maxHeight = content.scrollHeight + 40 + "px";
+            content.classList.add("open");
+            indicator.src = "/images/arrow-open.png";   // <-- your open image
+        } else {
+            content.style.maxHeight = null;
+            content.classList.remove("open");
+            indicator.src = "/images/arrow-closed.png"; // <-- your closed image
         }
     });
 });
